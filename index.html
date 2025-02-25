@@ -18,41 +18,67 @@
                 <li><a href="#">Справка</a></li>
             </ul>
         </nav>
-        <button class="language">Русский</button>
+        <a href="" class="language">Русский</a>
         <h1>Лучшие авиабилеты по низким ценам</h1>
         <section class="search">
             <div class="radio-button">
                 <div>
-                    <input type="radio" id="radio-button-avia">
-                    <label for="radio-button-avia">Авиабилеты</label>
+                    <a href="" class="to-new-page">Авиабилеты</a>
                 </div>
                 <div>
-                    <input type="radio" id="radio-button-train">
-                    <label for="radio-button-train">Ж/д билеты</label>
+                    <a href="" class="to-new-page">Ж/д билеты</a>
                 </div>
                 <div>
-                    <input type="radio" id="radio-button-bus">
-                    <label for="radio-button-bus">Автобусы</label>
+                    <a href="" class="to-new-page">Автобусы</a>
                 </div>
                 <div>
-                    <input type="radio" id="radio-button-hotels">
-                    <label for="radio-button-hotels">Отели</label>
+                    <a href="" class="to-new-page sale">Отели</a>
                 </div>
                 <div>
-                    <input type="radio" id="radio-button-insur">
-                    <label for="radio-button-insur">Страхование</label>
+                    <a href="" class="to-new-page">Страхование</a>
                 </div>
             </div>
             <form class="inline-form-search">
-                <input type="text" id="input-from" placeholder="Откуда">
-                <span class="divider"></span>
-                <input type="text" id="input-to" placeholder="Куда">
-                <span class="divider"></span>
-                <input type="date" id="date-of-departure" placeholder="Туда">
-                <span class="divider"></span>
-                <input type="date" id="date-of-arrival" placeholder="Обратно">
-                <span class="divider"></span>
-                <input type="text" id="passenger-info" placeholder="Пассажиры, класс">
+                <label for="input-from">Откуда</label>
+                <input type="text" id="input-from">
+                <label for="input-to">Куда</label>
+                <input type="text" id="input-to">
+                <label for="date-of-departure">Туда</label>
+                <input type="date" id="date-of-departure">
+                <label for="date-of-arrival">Обратно</label>
+                <input type="date" id="date-of-arrival">
+                <button id="passenger-info">Пассажиры, класс</button>
+                <div class="number-input">
+                    <p>Взрослые старше 12 лет</p>
+                    <button>-</button>
+                    <input type="number" id="numberInputAdult">
+                    <button>+</button>
+                </div>
+                <div class="number-input">
+                    <p>Дети 2-12 лет</p>
+                    <button>-</button>
+                    <input type="number" id="numberInputKids">
+                    <button>+</button>
+                </div>
+                <div class="number-input">
+                    <p>Младенцы до 2 лет</p>
+                    <button>-</button>
+                    <input type="number" id="numberInputChild">
+                    <button>+</button>
+                </div>
+                <p>Класс</p>
+                <div>
+                    <input type="radio" id="any" value="any" checked>
+                    <label for="any">Любой</label>
+                </div>
+                <div>
+                    <input type="radio" id="business" value="business">
+                    <label for="business">Бизнес</label>
+                </div>
+                <div>
+                    <input type="radio" id="economy" value="economy">
+                    <label for="economy">Эконом</label>
+                </div>
                 <button class="search-find-btn">Найти</button>
             </form>
             <p><a href="">Сложный маршрут</a></p>
@@ -62,7 +88,7 @@
         <div class="adv">
             <article class="adv-tlg">
                 <div class="grid-adv-header">
-                    <h3>Управляйте вашими билетами в Telegram</h3>
+                    <h2>Управляйте вашими билетами в Telegram</h2>
                 </div>
                 <div class="grid-adv-text">
                     <p class="check">Доступ к билетам и кабинету</p>
@@ -70,7 +96,7 @@
                     <p class="check">Доступ к билетам и кабинету</p>
                 </div>
                 <div class="grid-adv-button">
-                    <button class="adv-tlg-button">Посмотреть возможности</button>
+                    <a href="" class="adv-tlg-button">Посмотреть возможности</a>
                 </div>
                 <div class="grid-adv-img">
                     <img src="" alt="Реклама Telegram">
@@ -125,7 +151,7 @@
     </main>
     <aside>
         <section>
-            <div><h2 class="left">ТОП-10 авиакомпаний</h2><span class="right"><a href="">Подробнее</a></span></div>
+            <div><h2 class="left">Топ-10 авиакомпаний</h2><span class="right"><a href="">Подробнее</a></span></div>
             <div class="top-ten-aviacompany">
                 <div><span class="left">1 <a href="">Эмирейтс</a></span><span class="right star">4.7</span></div>
                 <div><span class="left">2 <a href="">Катар Эйрвейз</a></span><span class="right star">4.7</span></div>
@@ -157,7 +183,7 @@
             <img src="" alt="Ноутбук">
             <form class="inline-form-spam">
                 <input type="email" placeholder="Email *" class="email-input-spam">
-                <button class="email-btn-spam">&#062;</button>
+                <button class="email-btn-spam">Найти &#062;</button>
             </form>
         </section>
     </aside>
@@ -245,7 +271,7 @@
         </div>
         <hr>
         <div class="stores-and-partners">
-            <div><button>Партнерская программа</button></div>
+            <div><a href="">Партнерская программа</a></div>
             <div><img src="img/" alt="Google Play"></div>
             <div><img src="img/" alt="App Store"></div>
         </div>
